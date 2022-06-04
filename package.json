@@ -1,0 +1,60 @@
+{
+  "name": "node_study",
+  "version": "1.0.0",
+  "description": "공부",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec ./node_modules/.bin/ts-node ./src/app.ts",
+    "start2": "tsc-watch --onSuccess \"ts-node dist/app.js\"",
+    "build": "tsc -p .",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/app.ts"
+  },
+  "author": "taejin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ketotable/inout_chat/issues"
+  },
+  "homepage": "https://github.com/ketotable/inout_chat#readme",
+  "dependencies": {
+    "@aws-sdk/types": "^3.78.0",
+    "@types/ejs": "^3.1.1",
+    "@types/express": "^4.17.13",
+    "@types/ioredis": "^4.28.10",
+    "aws-sdk": "^2.1140.0",
+    "body-parser": "^1.19.2",
+    "class-validator": "^0.13.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "ioredis": "^5.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.15",
+    "promise-mysql": "^5.1.0",
+    "slack-node": "^0.1.8",
+    "socket.io": "^4.5.1",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.35",
+    "@types/node-cron": "^3.0.1",
+    "@types/slack-node": "^0.1.4",
+    "@types/socket.io": "^3.0.2",
+    "@types/validator": "^13.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
+}
